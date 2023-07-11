@@ -6,54 +6,43 @@
     <title>Document</title>
     <link rel="shortcut icon" href="../public/assets/images/site.ico">
     <style>
-          .my-header{
-             height: 50px;
-             border: 1px solid black;
-             line-height: 10px;
-             background-color: aquamarine;
-             color: blue;
-          }
-
-          div{
+           header{
+             border: 1px solid red;
              display: flex;
-          }
-          
-          .my-aside{
-             height: 500px;
-             width: 300px;
-             border: 1px solid black;
-          }
+             justify-content: space-between;
+             align-items: center;
+           }
 
-          .my-main{
-             width:1000px;
-             border: 1px solid black;
-             background-color: brown;
-             color: white;
-          }
+           .navbar{
+             display: flex;
+             list-style: none;
 
-          .my-footer{
-            border: 1px solid black;
-             background-color:blue;
-          }
+           }
+
+           li{
+             margin-left: 30px;
+           }
+
+           nav{
+              background-color: yellow;
+           }
     </style>
 </head>
  <body>
-      <header class="my-header">
-             <h1>This our Header</h1>
-      </header>
+         <header>
+              <div class="logo">
+                 Logo
+              </div>
 
-     <div>
-        <aside class="my-aside">
-            <h1>Aside</h1>
-       </aside>
-
-       <main class="my-main">
-        <h1>This is the main content</h1>
-   </main>
-     </div>
-  
-      <footer class="my-footer">
-           <h1>This is our Footer</h1>
-      </footer>
+              <nav>
+                  <ul class="navbar">
+                     <li>Home</li>
+                     <li>services</li>
+                     <li>contact</li>
+                     <li>portfolio</li>
+                     <li>blog</li>
+                  </ul>
+              </nav>
+         </header>
  </body>
 </html>
